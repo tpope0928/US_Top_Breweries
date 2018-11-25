@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/US_Top_Breweries'
+
+USTopBreweries::CLI.new.call
