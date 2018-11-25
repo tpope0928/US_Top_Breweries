@@ -4,7 +4,7 @@ class USTopBreweries::Brewery
 
   @@all = []
 
-  def self.new_from_index_page(r)
+  def self.new_from_index_page(b)
     self.new(
       r.css("h2").text,
       "https://www.theworlds50best.com#{r.css("a").attribute("href").text}",
@@ -13,11 +13,11 @@ class USTopBreweries::Brewery
       )
   end
 
-  def initialize(name=nil, url=nil, location=nil, position=nil)
+  def initialize(name=nil, url=nil, location=nil, type=nil)
     @name = name
     @url = url
     @location = location
-    @position = position
+    @type = type
     @@all << self
   end
 
