@@ -58,8 +58,8 @@ class USTopBreweries::CLI
     puts ""
     puts "---------- Top Breweries in the United States ----------"
     puts ""
-    USTopBreweries::Brewery.all.each.with_index(from_number) do |restaurant, index|
-      puts "#{index}. #{restaurant.name} - #{restaurant.location}"
+    USTopBreweries::Brewery.all.each.with_index(from_number) do |brewery, index|
+      puts "#{index}. #{brewery.name} - #{restaurant.location}"
     end
   end
 

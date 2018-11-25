@@ -1,6 +1,6 @@
 class USTopBreweries::Brewery
 
-  attr_accessor :name, :position, :location, :url, :head_chef, :website_url, :food_style, :best_dish, :contact, :description
+  attr_accessor :name, :location, :type, :num_beers, :rating, :num_rating :website, :description
 
   @@all = []
 
